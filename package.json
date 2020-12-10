@@ -1,0 +1,29 @@
+{
+  "name": "chatitup",
+  "version": "1.0.0",
+  "description": "live chat application with designated channels",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enwumeh/ChatItUp.git"
+  },
+  "author": "Emma Nwumeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enwumeh/ChatItUp/issues"
+  },
+  "homepage": "https://github.com/enwumeh/ChatItUp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
