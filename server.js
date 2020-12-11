@@ -13,7 +13,7 @@ io.on('connection', socket => {
   // console.log("New Websocket connection...")
   //io.emit == to ALL the clients in general
 
-  //announces to the single client when they are connected
+  //announces to the single client(current user) when they are connected
   socket.emit('message', 'Welcome to Chat It Up!')
 
   //announces when a user connects.. emits to everyone EXCEPT the user connecting
@@ -21,6 +21,10 @@ io.on('connection', socket => {
   
   socket.on('disconnect', () => {
     io.emit('message', 'a user has exited the chat');
+  })
+
+  socket.on('chatMessage', msg => {
+    io.emit('message', msg)
   })
 });
 app.use(express.static(path.join(__dirname, 'public')));

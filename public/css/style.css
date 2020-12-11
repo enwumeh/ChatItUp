@@ -2,6 +2,9 @@
 :root {
 	--dark-color-a: rgb(179, 33, 179);
 	--dark-color-b: rgb(108, 15, 108);
+	--light-color: #f5f2c5;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
 }
 
 * {
@@ -17,11 +20,19 @@ body {
 	margin: 20px;
 }
 
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
 
 .btn {
 	cursor: pointer;
   padding: 20px 17px;
   margin: 23px;
+	background: var(--light-color);
 	color: var(--dark-color-a);
 	border: 0;
 	font-size: 17px;
