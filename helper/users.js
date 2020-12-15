@@ -17,7 +17,7 @@ function exitUser(id) {
   if (idx !== -1) {
     return allUsers.splice(idx, 1)[0];
   }
-}
+} 
 
 function getRoomUsers(room) {
   return allUsers.filter(user => user.room === room);
