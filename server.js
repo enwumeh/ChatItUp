@@ -3,7 +3,7 @@ const http = require('http');
 const socketio = require('socket.io');
 const path = require('path');
 const formMessage = require('./helper/messages')
-const { connectUser, getCurrentUser }  = require('./helper/users')
+const { connectUser, getCurrentUser,exitUser, getRoomUsers }  = require('./helper/users')
 
 
 const app = express();
@@ -37,12 +37,14 @@ io.on('connection', socket => {
 
   socket.on('chatMessage', msg => {
     const user = getCurrentUser(socket.id);
-    io.to(userName.room).emit('message', formMessage(newUser.username, msg));
-  })
+    io.to(userName.room).emit('message', formMessage(user.username, msg));
+  });
   
   socket.on('disconnect', () => {
-    io.emit('message', formMessage(userBot, 'a user has exited the chat'));
-  })
+    const user = exitUser(socket.id);
+    if (user) {
+      io.to(user.room).emit('message', formMessage(userBot, `${user.username} has just exited the chatroom`));
+  }})
 
  
 });
