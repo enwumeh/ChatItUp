@@ -2,7 +2,7 @@
 :root {
 	--dark-color-a: rgb(179, 33, 179);
 	--dark-color-b: rgb(100, 15, 108);
-	--light-color: #f2c83f;
+	--light-color: #e2c462;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -27,6 +27,19 @@ ul {
 
 a {
 	text-decoration: none;
+}
+
+
+
+h3, h2 {
+  text-align: center;
+  color: rgb(186, 183, 183);
+}
+
+.app-title {
+  /* color: brown; */
+  position: relative;
+  left: 30px;
 }
 
 .btn {
@@ -188,8 +201,16 @@ a {
 	width: 100%;
 }
 
+
+#room-name {
+  margin-top: -30px;
+  margin-bottom: 85px;
+  color: white;
+  /* background-color: rgb(212, 160, 69); */
+}
 #users {
   margin-top: -74px;
+  /* text-align: center; */
 }
 
 @media (max-width: 700px) {
@@ -199,5 +220,20 @@ a {
 
 	.chat-sidebar {
 		display: none;
-	}
+  }
+  
+  .chat-messages .message {
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: var(--light-color);
+    border-radius: 5px;
+    left: -40px;
+    /* overflow-wrap: break-word; */
+    width: 450px;
+  }
+
+  .join-main .btn {
+    margin-top: 20px;
+    width: 90%;
+  }
 }
