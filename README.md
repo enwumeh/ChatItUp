@@ -4,7 +4,7 @@
 
 ## Overview
 
-_**Emma's eCommerce** is a full stack app, that allows administrators to keep track of sellers, each of their customers, and the items that customers buy
+**Chat It Up** is a full stack app, that allows administrators to keep track of sellers, each of their customers, and the items that customers buy
 
 
 ### Libraries and Dependencies
