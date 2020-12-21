@@ -1,8 +1,8 @@
 
 :root {
 	--dark-color-a: rgb(179, 33, 179);
-	--dark-color-b: rgb(108, 15, 108);
-	--light-color: #f5f2c5;
+	--dark-color-b: rgb(100, 15, 108);
+	--light-color: #f2c83f;
 	--success-color: #5cb85c;
 	--error-color: #d9534f;
 }
@@ -23,6 +23,7 @@ body {
 ul {
 	list-style: none;
 }
+
 
 a {
 	text-decoration: none;
@@ -88,7 +89,7 @@ a {
 }
 
 .chat-messages {
-	padding: 100px;
+	padding: 50px;
 	max-height: 500px;
   overflow-y: scroll;
   margin: 0 auto;
@@ -98,9 +99,10 @@ a {
 	padding: 10px;
 	margin-bottom: 15px;
 	background-color: var(--light-color);
-	border-radius: 5px;
-  overflow-wrap: break-word;
-  width: 590px;
+  border-radius: 5px;
+  left: -40px;
+  /* overflow-wrap: break-word; */
+  width: 710px;
 }
 
 .chat-messages .message .meta {
@@ -108,10 +110,12 @@ a {
 	font-weight: bold;
 	color: var(--dark-color-b);
 	opacity: 0.7;
-	margin-bottom: 7px;
+  margin-bottom: 7px;
+  /* float: right; */
 }
 
 .chat-messages .message .meta span {
+  float: right;
 	color: #777;
 }
 
@@ -182,6 +186,10 @@ a {
 .join-main .btn {
 	margin-top: 20px;
 	width: 100%;
+}
+
+#users {
+  margin-top: -74px;
 }
 
 @media (max-width: 700px) {
