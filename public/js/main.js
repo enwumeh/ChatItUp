@@ -75,6 +75,7 @@ function addUsers(users) {
   usersList.innerHTML = "";
   users.forEach((user) => {
     const list = document.createElement("li");
+    list.classList.add('users-list')
     list.innerText = user.username;
     usersList.appendChild(list);
   });

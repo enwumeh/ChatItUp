@@ -44,12 +44,14 @@ h3, h2 {
 
 .btn {
 	cursor: pointer;
-  padding: 20px 17px;
-  margin: 23px;
+  padding: 10px 17px;
+  /* margin: 23px; */
 	background: var(--light-color);
 	color: var(--dark-color-a);
 	border: 0;
-	font-size: 17px;
+  font-size: 17px;
+  position: relative;
+  /* left: -21px; */
 }
 
 /* Chat Page */
@@ -211,6 +213,10 @@ h3, h2 {
 #users {
   margin-top: -74px;
   /* text-align: center; */
+}
+
+.users-list {
+  text-align: center;
 }
 
 @media (max-width: 700px) {
