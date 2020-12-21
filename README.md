@@ -4,15 +4,11 @@
 
 ## Overview
 
-**Chat It Up** is a full stack app, that allows administrators to keep track of sellers, each of their customers, and the items that customers buy
+**Chat It Up** is a live chat app with websockets. Utilizes Node, Express, and Socket.io, and vanilla Javascript on the front end.
 
 
 ### Libraries and Dependencies
 Javascript, Node, Express, Socket.io 
 
 <br>
-
-
-
-- Assign prices to items and total prices for customers with multiple items
 
